@@ -1,0 +1,17 @@
+<mat-card *ngFor="let item of items" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ item.item_name }}</mat-card-title>
+        <mat-card-subtitle>{{ item.item_description }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/images/placeholder-product-image.png" alt="product image">
+    <mat-card-content>
+        <p>
+            {{ item.item_description }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>VIEW</button>
+        <button mat-button>ADD TO CART</button>
+    </mat-card-actions>
+</mat-card>
